@@ -1,3 +1,39 @@
 .container{
     padding-top: 3rem;
 }
+.loader{
+    display: block;
+    text-align: center;
+}
+#display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    
+    /* flex: 30% */
+}
+.image-container img{
+    width: 14rem;
+    height:14rem ;
+    border-radius: 5px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:250px){
+    .image-container img{
+        width: 10rem;
+        height:10rem ;
+        border-radius: 5px;
+    }
+     .content p{
+       margin: 0 5px;
+        
+    } 
+}

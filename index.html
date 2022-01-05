@@ -15,9 +15,17 @@
          <h1 class="text-center">Pexels Photo App</h1>
         <div class="input-group input-group-lg mt-5">
             
-            <input type="text" class="form-control" placeholder="Search photos..." aria-label="Username" aria-describedby="addon-wrapping" aria-describedby="inputGroup-sizing-lg">
+            <input type="text" id="search-input" class="form-control" placeholder="Search photos..." aria-label="Username" aria-describedby="addon-wrapping" aria-describedby="inputGroup-sizing-lg">
+          </div>
+
+           <h1 class="text-center mt-3" id="no_photo">No photos!</h1> 
+           
+          <h1 class="text-center mt-3" id="loading"></h1>
+          <div id="display">
+           
           </div>
         
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="index.js"></script>
 </html>
