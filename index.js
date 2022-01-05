@@ -26,8 +26,9 @@ function searchFunction() {
      if(allPhotos.length === 0){
         console.log(noPhoto) 
         noPhoto.style.visibility="visible"
-        
-     }else{
+        }
+
+       
      allPhotos.map(item=>{
          imageContainer.innerHTML+=`
          <div class="image-container">
@@ -41,13 +42,11 @@ function searchFunction() {
          console.log(item)
      }
         )
-    }
-
     // const [photos,]
 
 }).catch(err=>{
-    noPhoto.innerHTML="No photos!"
-   
+   imageContainer.innerHTML=""
+   noPhoto.style.visibility="visible"
     console.log(err)
 })
     console.log(inputs)
